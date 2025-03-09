@@ -1,0 +1,221 @@
+/* tayler.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #001219; /* Color base oscuro */
+  color: #E9D8A6; /* Color claro para texto */
+  width: 100%;
+  overflow-x: hidden; /* Prevenir scroll horizontal */
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #001219; /* Color base oscuro */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos del header */
+header {
+  background-color: #0A3966; /* Color azul oscuro */
+  color: #E9D8A6; /* Color claro para texto */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #EE9B00; /* Color dorado para título principal */
+}
+
+/* Estilos de la navegación */
+.navegacion {
+  background-color: #CA6702; /* Color naranja oscuro */
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.navegacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navegacion ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.navegacion ul li a {
+  color: #E9D8A6; /* Color claro para texto */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navegacion ul li a:hover {
+  color: #fff;
+  background-color: #BB3E03; /* Color naranja rojizo para hover */
+}
+
+/* Estilos del submenu mejorados */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #CA6702; /* Color naranja oscuro */
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  min-width: 200px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  border: 1px solid #94D2BD; /* Borde turquesa */
+}
+
+.Desplegable {
+  position: relative;
+}
+
+.Desplegable:hover .submenu {
+  display: block; /* Mostrar submenu al hacer hover */
+}
+
+.Desplegable > a:after {
+  content: " ▼";
+  font-size: 0.7em;
+  vertical-align: middle;
+}
+
+.submenu li {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px;
+  color: #E9D8A6; /* Color claro para texto */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.submenu li a:hover {
+  background-color: #AE2012; /* Color rojo oscuro para hover */
+  color: #fff;
+}
+
+/* Estilos del hero */
+.hero {
+  background-color: #0A3966; /* Color azul oscuro */
+  color: #E9D8A6; /* Color claro para texto */
+  padding: 60px 0;
+  text-align: center;
+  background-image: linear-gradient(135deg, #0A3966, #001219); /* Gradiente azul */
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+  font-size: 2.8em;
+  margin: 0;
+  font-weight: 700;
+  color: #EE9B00; /* Color dorado para título */
+}
+
+.hero h3 {
+  font-size: 1.6em;
+  margin: 15px 0 0;
+  font-weight: 400;
+  color: #94D2BD; /* Color turquesa para subtítulo */
+}
+
+/* Estilos del menú */
+.menu {
+  padding: 40px 0;
+  background-color: #001219; /* Color base oscuro */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Aumentar el espacio entre categorías */
+.categoria-menu {
+  margin-bottom: 80px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #001219; /* Color base oscuro */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 95%; /* Aumentado para más espacio */
+  max-width: 1200px; /* Aumentado para más espacio */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Última categoría sin margen inferior */
+.categoria-menu:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+/* Establecer el orden de las categorías */
+.categoria-menu[data-categoria="sopas"] {
+  order: 1; /* Primero las sopas */
+}
+
+.categoria-menu[data-categoria="hamburguesas"] {
+  order: 2; /* Luego las hamburguesas */
+}
+
+.categoria-menu[data-categoria="sanwiches"] {
+  order: 3; /* Después los sándwiches */
+}
+
+/* Para cualquier otra categoría, darle un orden alto */
+.categoria-menu:not([data-categoria="sopas"]):not([data-categoria="hamburguesas"]):not([data-categoria="sanwiches"]) {
+  order: 4;
+}
+
+/* Estilo especial para las categorías específicas */
+.categoria-menu[data-categoria="sopas"],
+.categoria-menu[data-categoria="sanwiches"],
+.categoria-menu[data-categoria="hamburguesas"] {
+  margin-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  position: relative;
+  border: 2px solid #94D2BD; /* Borde turquesa */
+}
