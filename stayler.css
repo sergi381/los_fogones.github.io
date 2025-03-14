@@ -1,4 +1,4 @@
-/* tayler.css */
+/* Estilos base */
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +7,11 @@
 
 html, body {
   font-family: 'Montserrat', 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #001219; /* Color base oscuro */
-  color: #E9D8A6; /* Color claro para texto */
+  background-color: #DEE2FF; /* Fondo principal (#DEE2FF) */
+  color: #2afab5b9; /* Texto gris oscuro (#8A817C) */
   width: 100%;
-  overflow-x: hidden; /* Prevenir scroll horizontal */
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .contenedor {
@@ -20,202 +19,181 @@ html, body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #001219; /* Color base oscuro */
+  background-color: #8c7abe49; /* Fondo blanco */
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-/* Estilos del header */
+/* Header */
 header {
-  background-color: #0A3966; /* Color azul oscuro */
-  color: #E9D8A6; /* Color claro para texto */
+  background-color: #4b535f7e; /* Azul suave (#8E9AAF) */
   padding: 20px 0;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
   width: 100%;
   margin-bottom: 20px;
 }
 
 header h1 {
-  margin: 0;
   font-size: 2.5em;
   font-weight: 700;
-  color: #EE9B00; /* Color dorado para título principal */
+  color: #49705b; /* Texto blanco */
 }
 
-/* Estilos de la navegación */
+/* Navegación */
 .navegacion {
-  background-color: #CA6702; /* Color naranja oscuro */
+  background-color: #CBC0D3; /* Lila claro (#CBC0D3) */
   padding: 12px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .navegacion ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
 .navegacion ul li {
-  margin: 0 15px;
   position: relative;
 }
 
 .navegacion ul li a {
-  color: #E9D8A6; /* Color claro para texto */
+  color: #3f3c3b28; /* Texto gris oscuro (#8A817C) */
   text-decoration: none;
   font-weight: 600;
   padding: 10px 15px;
   border-radius: 4px;
   transition: all 0.3s ease;
+  display: block;
 }
 
 .navegacion ul li a:hover {
-  color: #fff;
-  background-color: #BB3E03; /* Color naranja rojizo para hover */
+  background-color: #EFD3D7; /* Rosa claro (#EFD3D7) */
+  color: #3a393850; /* Texto gris oscuro (#8A817C) */
 }
 
-/* Estilos del submenu mejorados */
+/* Submenu */
 .submenu {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #CA6702; /* Color naranja oscuro */
-  list-style: none;
+  background-color: #CBC0D3; /* Lila claro (#CBC0D3) */
+  min-width: 220px;
   padding: 10px;
-  margin: 0;
-  min-width: 200px;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
   z-index: 1001;
-  border: 1px solid #94D2BD; /* Borde turquesa */
-}
-
-.Desplegable {
-  position: relative;
+  border: 1px solid #8E9AAF; /* Borde azul suave (#8E9AAF) */
 }
 
 .Desplegable:hover .submenu {
-  display: block; /* Mostrar submenu al hacer hover */
-}
-
-.Desplegable > a:after {
-  content: " ▼";
-  font-size: 0.7em;
-  vertical-align: middle;
-}
-
-.submenu li {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  display: block;
 }
 
 .submenu li a {
-  display: block;
   padding: 10px;
-  color: #E9D8A6; /* Color claro para texto */
-  text-decoration: none;
-  transition: all 0.3s ease;
+  color: #8A817C; /* Texto gris oscuro (#8A817C) */
 }
 
 .submenu li a:hover {
-  background-color: #AE2012; /* Color rojo oscuro para hover */
-  color: #fff;
+  background-color: #EFD3D7; /* Rosa claro (#EFD3D7) */
+  color: #8A817C; /* Texto gris oscuro (#8A817C) */
 }
 
-/* Estilos del hero */
-.hero {
-  background-color: #0A3966; /* Color azul oscuro */
-  color: #E9D8A6; /* Color claro para texto */
-  padding: 60px 0;
-  text-align: center;
-  background-image: linear-gradient(135deg, #0A3966, #001219); /* Gradiente azul */
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.hero h2 {
-  font-size: 2.8em;
-  margin: 0;
-  font-weight: 700;
-  color: #EE9B00; /* Color dorado para título */
-}
-
-.hero h3 {
-  font-size: 1.6em;
-  margin: 15px 0 0;
-  font-weight: 400;
-  color: #94D2BD; /* Color turquesa para subtítulo */
-}
-
-/* Estilos del menú */
-.menu {
-  padding: 40px 0;
-  background-color: #001219; /* Color base oscuro */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Aumentar el espacio entre categorías */
+/* Categorías de menú */
 .categoria-menu {
-  margin-bottom: 80px;
+  margin: 40px auto;
   padding: 30px;
+  background-color: #5b85755e; /* Fondo blanco */
+  border: 2px solid #8E9AAF; /* Borde azul suave (#8E9AAF) */
   border-radius: 8px;
-  background-color: #001219; /* Color base oscuro */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  width: 95%; /* Aumentado para más espacio */
-  max-width: 1200px; /* Aumentado para más espacio */
-  margin-left: auto;
-  margin-right: auto;
+  width: 95%;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-/* Última categoría sin margen inferior */
-.categoria-menu:last-child {
-  margin-bottom: 0;
-  border-bottom: none;
+.categoria-menu h2,
+.categoria-menu h3 {
+  color: #728d6867; /* Azul suave (#8E9AAF) */
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #8E9AAF; /* Borde azul suave (#8E9AAF) */
 }
 
-/* Establecer el orden de las categorías */
-.categoria-menu[data-categoria="sopas"] {
-  order: 1; /* Primero las sopas */
+/* Platos */
+.platos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px;
 }
 
-.categoria-menu[data-categoria="hamburguesas"] {
-  order: 2; /* Luego las hamburguesas */
+.plato {
+  background: #648f88; /* Fondo blanco */
+  padding: 20px;
+  border: 1px solid #8E9AAF; /* Borde azul suave (#8E9AAF) */
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.categoria-menu[data-categoria="sanwiches"] {
-  order: 3; /* Después los sándwiches */
+.plato:hover {
+  transform: translateY(-5px);
 }
 
-/* Para cualquier otra categoría, darle un orden alto */
-.categoria-menu:not([data-categoria="sopas"]):not([data-categoria="hamburguesas"]):not([data-categoria="sanwiches"]) {
-  order: 4;
+.plato img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
 }
 
-/* Estilo especial para las categorías específicas */
-.categoria-menu[data-categoria="sopas"],
-.categoria-menu[data-categoria="sanwiches"],
-.categoria-menu[data-categoria="hamburguesas"] {
-  margin-bottom: 100px;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  position: relative;
-  border: 2px solid #94D2BD; /* Borde turquesa */
+.plato h3 {
+  color: #49585500; /* Azul suave (#8E9AAF) */
+  margin-bottom: 10px;
+}
+
+.precio { 
+  display: inline-block;
+  padding: 8px 15px;
+  background: rgba(50, 52, 54, 0); /* Fondo azul suave claro (#8E9AAF con transparencia) */
+  border: 1px solid #8E9AAF; /* Borde azul suave (#8E9AAF) */
+  border-radius: 4px;
+  color: #8E9AAF; /* Azul suave (#8E9AAF) */
+  background-color: #49705b3d;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .navegacion ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submenu {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .platos {
+    grid-template-columns: 1fr;
+  }
+
+  .categoria-menu {
+    width: 100%;
+    padding: 15px;
+  }
 }
