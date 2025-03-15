@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Manejo de eventos para elementos desplegables
   desplegables.forEach(desplegable => {
-    // Evento para el enlace principal del desplegable
     const enlacePrincipal = desplegable.querySelector('a');
     
     enlacePrincipal.addEventListener('click', function(e) {
@@ -22,63 +21,18 @@ document.addEventListener('DOMContentLoaded', function() {
       
       const submenu = desplegable.querySelector('.submenu');
       
-      // Cierra todos los submenus primero
-      cerrarTodosSubmenus();
-      
-      // Abre el submenu actual
+      // Toggle del submenu actual
       if (submenu) {
-        submenu.style.display = 'block';
-      }
-    });
-    
-    // Evento para hover en dispositivos no táctiles
-    desplegable.addEventListener('mouseenter', function() {
-      if (window.innerWidth > 768) {
-        const submenu = this.querySelector('.submenu');
-        if (submenu) {
-          submenu.style.display = 'block';
-        }
-      }
-    });
-    
-    desplegable.addEventListener('mouseleave', function() {
-      if (window.innerWidth > 768) {
-        const submenu = this.querySelector('.submenu');
-        if (submenu) {
-          submenu.style.display = 'none';
-        }
+        const estaVisible = submenu.style.display === 'block';
+        cerrarTodosSubmenus(); // Cierra todos los otros submenús
+        submenu.style.display = estaVisible ? 'none' : 'block';
       }
     });
   });
 
-  // Cerrar submenu cuando se hace clic en cualquier lugar
-  document.addEventListener('click', function() {
-    cerrarTodosSubmenus();
-  });
-
-  // Smooth scroll para los enlaces del submenu
-  document.querySelectorAll('.submenu a').forEach(enlace => {
-    enlace.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      // Cerrar el submenu después de hacer clic
-      cerrarTodosSubmenus();
-      
-      const href = this.getAttribute('href');
-      const section = document.querySelector(href);
-      
-      if (section) {
-        section.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  });
-  
-  // Ajuste para dispositivos móviles
-  window.addEventListener('resize', function() {
-    if (window.innerWidth <= 768) {
+  // Cerrar submenu cuando se hace clic fuera
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.Desplegable')) {
       cerrarTodosSubmenus();
     }
   });

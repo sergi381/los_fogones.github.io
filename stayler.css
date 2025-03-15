@@ -84,19 +84,21 @@ header h1 {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #CBC0D3; /* Lila claro (#CBC0D3) */
+  background-color: #CBC0D3;
   min-width: 220px;
   padding: 10px;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1001;
-  border: 1px solid #8E9AAF; /* Borde azul suave (#8E9AAF) */
+  border: 1px solid #8E9AAF;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.Desplegable:hover .submenu {
+.submenu.active {
   display: block;
+  opacity: 1;
 }
-
 .submenu li a {
   padding: 10px;
   color: #8A817C; /* Texto gris oscuro (#8A817C) */
@@ -132,18 +134,15 @@ header h1 {
 /* Platos */
 .platos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 15px;
 }
 
 .plato {
   background: #648f88; /* Fondo blanco */
-  padding: 20px;
   border: 1px solid #8E9AAF; /* Borde azul suave (#8E9AAF) */
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.3s ease;
+
 }
 
 .plato:hover {
@@ -151,6 +150,8 @@ header h1 {
 }
 
 .plato img {
+  max-width: 180px;
+  margin-bottom: 10px;
 }
 
 .plato h3 {
