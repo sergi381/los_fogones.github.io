@@ -216,7 +216,7 @@ header {
 }
 .hero h1 { 
   color: #f5e9e6;
-  font-size: 2.0em; 
+  font-size: 2.5em; 
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
@@ -319,7 +319,7 @@ footer a:hover {
 .hero {
   text-align: center;
   padding: 50px 0;
-  background: linear-gradient(rgba(50, 31, 27, 0.8), #321f1bcc),
+  background: linear-gradient(rgba(86, 53, 47, 0.907), #321f1bb0),
               url('ruta-a-tu-imagen-de-fondo.jpg');
   background-size: cover;
   background-position: center;
