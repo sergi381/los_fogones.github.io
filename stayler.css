@@ -204,12 +204,7 @@ header {
   opacity: 0.1;
 }
 
-.plato img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  transition: transform 0.3s ease;
-}
+
 
 .plato img:hover {
   transform: scale(1.05);
