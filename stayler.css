@@ -132,7 +132,7 @@ header {
   touch-action: manipulation; /* Mejora la respuesta táctil */
 }
 
-/* Contenedor principal */
+
 .contenedor {
   max-width: 1200px;
   margin: 0 auto;
@@ -161,27 +161,7 @@ header {
   text-shadow: 1px 1px 2px #0000001a;
 }
 
-.categoria-extra{
-  width: 20%;
-  background-color: #f0d8d2; 
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #321f1b;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  position: relative;
-  background-image: 
-    linear-gradient(45deg, rgba(50, 31, 27, 0.1) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(50, 31, 27, 0.1) 25%, transparent 25%);
-  background-size: 10px 10px;
-}
-
-.categoria-extrah3 {
-  color: #321f1b;
-  margin-bottom: 15px;
-  font-family: 'Palatino', serif;
-  text-shadow: 1px 1px 2px #0000001a;
-}
+/* Estilos adicionales para el contenido dentro de la ventana emergente si es necesario */
 /* Platos */
 .platos {
   display: grid;
@@ -194,6 +174,8 @@ header {
     grid-template-columns:(auto-fit repeat(5, 1));
     grid-template-rows:(auto-fit repeat8a(250, 1fr));
     gap: 2px;
+    right: 0;
+    bottom: 0;
 }
 
 .plato {
@@ -340,4 +322,91 @@ footer a:hover {
   background-size: cover;
   background-position: center;
   color: #321f1b;
+}
+
+/* Estilos para el contenedor del menú desplegable fijo */
+.menu-desplegable-fijo {
+  position: fixed;
+  left: 20px; /* Ajustado para la izquierda */
+  bottom: 20px;
+  z-index: 1001;
+}
+
+/* Estilos para el botón de abrir el menú (tu estilo) */
+.button-fijo-izquierda-abajo {
+  position: fixed; /* Se mantiene fijo en la ventana del navegador */
+  left: 2100px; /* Ajustado para la derecha */
+  bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+  padding: 15px 30px; /* Ajusta el tamaño del botón (relleno) */
+  font-size: 2.3rem; /* Ajusta el tamaño del texto */
+  background-color: #dc5d3e; /* Ejemplo de color de fondo */
+  color: #f5e9e6; /* Ejemplo de color de texto */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  z-index: 1002; /* Asegura que esté por encima del menú cuando está oculto */
+}
+
+.button-fijo-izquierda-abajo:hover {
+  background-color: #e07a5f; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el menú desplegable (inicialmente oculto) */
+.menu-fijo {
+  background-color: #dc5d3e;
+  border: 1px solid #321f1b;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  position: absolute; /* Posiciona el menú relativamente al contenedor */
+  bottom: calc(100% + 10px); /* Lo coloca encima del botón */
+  left: 0;
+  display: none; /* Oculto por defecto */
+  padding: 20px;
+  width: 250px; /* Ancho del menú */
+}
+
+/* Estilos para el botón de cerrar dentro del menú */
+.boton-cerrar-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 3.0rem;
+  cursor: pointer;
+  color: #321f1b;
+  opacity: 1.0;
+  transition: opacity 0.2s ease;
+}
+
+.boton-cerrar-menu:hover {
+  opacity: 1;
+}
+
+/* Estilos para la lista del menú */
+.menu-fijo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-fijo ul li {
+  margin-bottom: 10px;
+}
+
+.menu-fijo ul li a {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #321f1b;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.2rem; /* Ajusta el tamaño de la fuente del menú si lo deseas */
+}
+
+.menu-fijo ul li a:hover {
+  background-color: #e8d5d0;
 }

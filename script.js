@@ -44,3 +44,29 @@ window.addEventListener('load', () => {
     }, 10);
   }
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const botonMenuFijo = document.getElementById('botonMenuFijo');
+  const botonCerrarMenu = document.getElementById('botonCerrarMenu');
+  const menuFijo = document.getElementById('menuFijo'); });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const botonMenuFijo = document.getElementById('botonMenuFijo');
+    const botonCerrarMenu = document.getElementById('botonCerrarMenu');
+    const menuFijo = document.getElementById('menuFijo');
+  
+    console.log("Botón de menú fijo:", botonMenuFijo);
+    console.log("Botón de cerrar menú:", botonCerrarMenu);
+    console.log("Menú fijo:", menuFijo);
+  
+    if (botonMenuFijo && botonCerrarMenu && menuFijo) {
+      botonMenuFijo.addEventListener('click', function() {
+        menuFijo.style.display = 'block';
+      });
+  
+      botonCerrarMenu.addEventListener('click', function() {
+        menuFijo.style.display = 'none';
+      });
+    } else {
+      console.error("Uno o más elementos no fueron encontrados en el DOM.");
+    }
+  });
