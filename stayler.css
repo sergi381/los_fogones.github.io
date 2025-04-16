@@ -335,7 +335,7 @@ footer a:hover {
 /* Estilos para el botón de abrir el menú (tu estilo) */
 .button-fijo-izquierda-abajo {
   position: fixed; /* Se mantiene fijo en la ventana del navegador */
-  left: 2100px; /* Ajustado para la derecha */
+  left: 1700px; /* Ajustado para la derecha */
   bottom: 20px; /* Ajusta la distancia desde el borde inferior */
   padding: 15px 30px; /* Ajusta el tamaño del botón (relleno) */
   font-size: 2.3rem; /* Ajusta el tamaño del texto */
@@ -362,6 +362,49 @@ footer a:hover {
   position: absolute; /* Posiciona el menú relativamente al contenedor */
   bottom: calc(100% + 10px); /* Lo coloca encima del botón */
   left: 0;
+  display: none; /* Oculto por defecto */
+  padding: 20px;
+  width: 250px; /* Ancho del menú */
+}
+
+/* Estilos para el contenedor del menú desplegable fijo */
+.menu-desplegable-fijo {
+  position: fixed;
+  left: 20px; /* Ajustado para la izquierda */
+  bottom: 20px;
+  z-index: 1001;
+}
+
+/* Estilos para el botón de abrir el menú (fijo en la esquina inferior derecha) */
+.button-fijo-derecha-abajo {
+  position: fixed; /* Se mantiene fijo en la ventana del navegador */
+  right: 20px; /* Fija el botón a 20px del borde derecho */
+  bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+  padding: 15px 30px; /* Ajusta el tamaño del botón (relleno) */
+  font-size: 2.3rem; /* Ajusta el tamaño del texto */
+  background-color: #dc5d3e; /* Ejemplo de color de fondo */
+  color: #f5e9e6; /* Ejemplo de color de texto */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  z-index: 1002; /* Asegura que esté por encima del menú cuando está oculto */
+}
+
+.button-fijo-derecha-abajo:hover {
+  background-color: #2e2e2e; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el menú desplegable (inicialmente oculto) */
+.menu-fijo {
+  background-color: #dc5d3e;
+  border: 1px solid #321f1b;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  position: absolute; /* Posiciona el menú relativamente al contenedor */
+  bottom: calc(100% + 10px); /* Lo coloca encima del botón */
+  right: 0; /* Alinea el menú con el lado derecho del contenedor */
   display: none; /* Oculto por defecto */
   padding: 20px;
   width: 250px; /* Ancho del menú */
