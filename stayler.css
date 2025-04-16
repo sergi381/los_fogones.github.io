@@ -398,13 +398,13 @@ footer a:hover {
 
 .menu-fijo ul li a {
   display: block;
-  padding: 10px 40px;
+  padding: 5px 30px;
   text-decoration: none;
   color: #321f1b;
   border-radius: 5px;
   transition: background-color 0.3s ease;
   font-family: 'Georgia', 'Times New Roman', serif;
-  font-size: 1.5rem; /* Ajusta el tamaño de la fuente del menú si lo deseas */
+  font-size: 0.8rem; /* Ajusta el tamaño de la fuente del menú si lo deseas */
 }
 
 .menu-fijo ul li a:hover {
