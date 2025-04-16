@@ -404,7 +404,7 @@ footer a:hover {
   border-radius: 5px;
   transition: background-color 0.3s ease;
   font-family: 'Georgia', 'Times New Roman', serif;
-  font-size: 0.5rem; /* Ajusta el tamaño de la fuente del menú si lo deseas */
+  font-size: 1.5rem; /* Ajusta el tamaño de la fuente del menú si lo deseas */
 }
 
 .menu-fijo ul li a:hover {
