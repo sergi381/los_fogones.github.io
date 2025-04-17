@@ -8,15 +8,15 @@
 body {
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.2rem;
-  background-color: #f5e9e6;  
-  background-image: 
-    linear-gradient(45deg, #e8d5d0 25%, transparent 25%),
-    linear-gradient(-45deg, #e8d5d0 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #e8d5d0 75%),
-    linear-gradient(-45deg, transparent 75%, #e8d5d0 75%);
+  background-color: #fffae6; /* Amarillo claro como fondo general */
+  background-image:
+    linear-gradient(45deg, #f0e68c 25%, transparent 25%), /* Tono más oscuro de amarillo */
+    linear-gradient(-45deg, #f0e68c 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #f0e68c 75%),
+    linear-gradient(-45deg, transparent 75%, #f0e68c 75%);
   background-size: 20px 20px;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-  color: #321f1b; 
+  color: #5c3a29; /* Marrón oscuro para el texto principal */
 }
 
 p{
@@ -24,8 +24,8 @@ p{
 }
 /* Estilos del header */
 header {
-  background-color: #321f1b;  
-  color: #f5e9e6; 
+  background-color: #e68a00; /* Naranja para el header */
+  color: #5c3a29; /* Marrón oscuro para el texto del header */
   padding: 1rem;
   background-image: repeating-linear-gradient(
     90deg,
@@ -41,7 +41,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
-  background-color: #dc5d3e;
+  background-color: #ffa700; /* Naranja más brillante para la navegación */
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
@@ -54,7 +54,7 @@ header {
 .navegacion ul li ul.submenu {
   display: none; /* Esto lo mantiene oculto por defecto */
   position: absolute;
-  background-color: #e07a5f;
+  background-color: #ffb347; /* Tono más claro de naranja para el submenú */
   min-width: 200px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1000;
@@ -74,21 +74,21 @@ header {
 
 .submenu li a {
   padding: 12px 16px;
-  color: #f5e9e6;
+  color: #5c3a29; /* Marrón oscuro para el texto del submenú */
   text-decoration: none;
   display: block;
   transition: all 0.3s;
 }
 
 .submenu li a:hover {
-  background-color: #dc5d3e;
+  background-color: #ffa700; /* Naranja al hacer hover en el submenú */
   padding-left: 20px;
 }
 
 /* Enlaces del menú */
 .navegacion ul li a {
   padding: 15px 20px;
-  color: #f5e9e6;
+  color: #5c3a29; /* Marrón oscuro para los enlaces del menú principal */
   text-decoration: none;
   font-family: 'Palatino', serif;
   transition: all 0.3s ease;
@@ -98,7 +98,7 @@ header {
 .submenu {
   display: none; /* Esto es crucial para que empiece oculto */
   position: absolute;
-  background-color: #e07a5f;
+  background-color: #ffb347;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1000;
   top: 100%;
@@ -113,12 +113,12 @@ header {
 /* Estilos para los items del submenú */
 .submenu li a {
   padding: 12px 16px;
-  color: #f5e9e6;
+  color: #5c3a29;
   transition: all 0.3s;
 }
 
 .submenu li a:hover {
-  background-color: #dc5d3e;
+  background-color: #ffa700;
   padding-left: 20px;
 }
 
@@ -141,21 +141,21 @@ header {
 
 /* Secciones del menú */
 .categoria-menu {
-  background-color: #f0d8d2; 
+  background-color: #ffe082; /* Amarillo más intenso para las categorías */
   margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid #321f1b;
+  border: 1px solid #5c3a29; /* Borde marrón oscuro */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   position: relative;
-  background-image: 
-    linear-gradient(45deg, rgba(50, 31, 27, 0.1) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(50, 31, 27, 0.1) 25%, transparent 25%);
+  background-image:
+    linear-gradient(45deg, rgba(92, 58, 41, 0.1) 25%, transparent 25%), /* Tono marrón claro para el patrón */
+    linear-gradient(-45deg, rgba(92, 58, 41, 0.1) 25%, transparent 25%);
   background-size: 10px 10px;
 }
 
 .categoria-menu h3 {
-  color: #321f1b;
+  color: #e68a00; /* Naranja para los títulos de las categorías */
   margin-bottom: 15px;
   font-family: 'Palatino', serif;
   text-shadow: 1px 1px 2px #0000001a;
@@ -179,11 +179,11 @@ header {
 }
 
 .plato {
-  background-color: #f5e9e6;
+  background-color: #fff8e1; /* Amarillo muy claro para los platos */
   padding: 15px;
   border-radius: 8px;
-  border: 1px solid #321f1b;
-  box-shadow: 0 2px 4px rgb(0, 0, 0);
+  border: 1px solid #5c3a29; /* Borde marrón oscuro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -201,8 +201,8 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
-    radial-gradient(circle at 100% 150%, #f5e9e6 24%, #e8d5d0 25%, #e8d5d0 28%, #f5e9e6 29%, #f5e9e6 36%, #e8d5d0 36%, #e8d5d0 40%, transparent 40%);
+  background-image:
+    radial-gradient(circle at 100% 150%, #fff8e1 24%, #ffe0b2 25%, #ffe0b2 28%, #fff8e1 29%, #fff8e1 36%, #ffe0b2 36%, #ffe0b2 40%, transparent 40%); /* Tonos de amarillo para el patrón */
   background-size: 10px 10px;
   opacity: 0.1;
 }
@@ -212,22 +212,22 @@ header {
 .plato img:hover {
   transform: scale(1.05);
 }
-.hero h1 { 
-  color: #f5e9e6;
-  font-size: 2.5em; 
+.hero h1 {
+  color: #5c3a29; /* Marrón oscuro para el título principal del hero */
+  font-size: 2.5em;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .hero h2 {
-  color: #f5e9e6;
+  color: #5c3a29; /* Marrón oscuro para el subtítulo del hero */
   font-size: 2.5em;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .plato h3 {
-  color: #321f1b;
+  color: #e68a00; /* Naranja para los nombres de los platos */
   margin: 10px 0;
   font-family:'Georgia', 'Times New Roman', serif;
 }
@@ -235,11 +235,12 @@ header {
   font-size: 1.5em;
   margin-bottom: 30px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  color: #5c3a29; /* Marrón oscuro para el texto secundario del hero */
 }
 
 h4 {
   font-size: 2.3rem;
-  color: #321f1b;
+  color: #e68a00; /* Naranja para los encabezados h4 */
   font-family:'Georgia', 'Times New Roman', serif;
   margin: 10px 0;
   letter-spacing: 0.8px;
@@ -251,18 +252,18 @@ h4 {
 h4 p{
   margin: 10px 8;
   font-size: 0.95em;
-  color: #321f1b;
+  color: #5c3a29; /* Marrón oscuro para el texto dentro de h4 */
   transition: color 0.2s ease;
 }
 
 h4 p:hover {
-  color: #dc5d3e;
+  color: #ff4500; /* Rojo anaranjado para el hover en texto de h4 */
   transform: translateX(3px);
 }
 
 h6 {
   font-size: 1.5rem;
-  color: #321f1b;
+  color: #e68a00; /* Naranja para los encabezados h6 */
   font-family:'Georgia', 'Times New Roman', serif;
   margin: 10px 0;
   letter-spacing: 0.8px;
@@ -274,17 +275,17 @@ h6 {
 h6 p {
   margin: 10px 8;
   font-size: 0.95em;
-  color: #321f1b;
+  color: #5c3a29; /* Marrón oscuro para el texto dentro de h6 */
   transition: color 0.2s ease;
 }
 
 h6 p:hover {
-  color: #dc5d3e;
+  color: #ff4500; /* Rojo anaranjado para el hover en texto de h6 */
   transform: translateX(3px);
 }
 
 .precio {
-  color: #321f1b;
+  color: #ff4500; /* Rojo anaranjado para los precios */
   font-weight: bold;
   margin-top: 10px;
   font-family: 'Georgia', serif;
@@ -293,35 +294,35 @@ h6 p:hover {
 
 /* Footer */
 footer {
-  background-color: #321f1b;
-  color: #f5e9e6;
+  background-color: #5c3a29; /* Marrón oscuro para el footer */
+  color: #fff8e1; /* Amarillo muy claro para el texto del footer */
   padding: 20px;
   text-align: center;
-  background-image: 
-    radial-gradient(circle at 50% 50%, rgba(245, 233, 230, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 100% 100%, rgba(245, 233, 230, 0.1) 0%, transparent 50%);
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(255, 248, 225, 0.1) 0%, transparent 50%), /* Amarillo claro para el patrón del footer */
+    radial-gradient(circle at 100% 100%, rgba(255, 248, 225, 0.1) 0%, transparent 50%);
   background-size: 20px 20px;
 }
 
 footer a {
-  color: #dc5d3e;
+  color: #ffa700; /* Naranja para los enlaces del footer */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #e8d5d0;
+  color: #ffe082; /* Tono más claro de amarillo para el hover en enlaces del footer */
 }
 
 /* Estilos para la sección hero */
 .hero {
   text-align: center;
   padding: 50px 0;
-  background: linear-gradient(rgba(86, 53, 47, 0.907), #321f1bb0),
+  background: linear-gradient(rgba(92, 58, 41, 0.7), rgba(230, 138, 0, 0.7)), /* Marrón oscuro y naranja con transparencia */
               url('ruta-a-tu-imagen-de-fondo.jpg');
   background-size: cover;
   background-position: center;
-  color: #321f1b;
+  color: #fff8e1; /* Amarillo muy claro para el texto del hero */
 }
 
 /* Estilos para el contenedor del menú desplegable fijo */
@@ -339,8 +340,8 @@ footer a:hover {
   bottom: 0; /* Pega el botón al borde inferior */
   padding: 15px 20px; /* Ajustado el padding para que coincida aproximadamente */
   font-size: 1.2rem; /* Ajustado el tamaño de la fuente para que coincida */
-  background-color: #dc5d3e; /* Ejemplo de color de fondo */
-  color: #f5e9e6; /* Ejemplo de color de texto */
+  background-color: #ffa700; /* Naranja para el botón fijo */
+  color: #5c3a29; /* Marrón oscuro para el texto del botón fijo */
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -350,13 +351,13 @@ footer a:hover {
 }
 
 .button-fijo-derecha-abajo:hover {
-  background-color: #2e2e2e; /* Cambio de color al pasar el mouse */
+  background-color: #e68a00; /* Naranja más oscuro al pasar el mouse */
 }
 
 /* Estilos para el menú desplegable (inicialmente oculto) */
 .menu-fijo {
-  background-color: #dc5d3e;
-  border: 1px solid #321f1b;
+  background-color: #ffa700; /* Naranja para el menú fijo */
+  border: 1px solid #5c3a29; /* Borde marrón oscuro */
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   position: absolute; /* Posiciona el menú relativamente al contenedor */
@@ -369,44 +370,4 @@ footer a:hover {
 
 /* Estilos para el botón de cerrar dentro del menú */
 .boton-cerrar-menu {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 3.0rem;
-  cursor: pointer;
-  color: #321f1b;
-  opacity: 1.0;
-  transition: opacity 0.2s ease;
-}
-
-.boton-cerrar-menu:hover {
-  opacity: 1;
-}
-
-/* Estilos para la lista del menú */
-.menu-fijo ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-fijo ul li {
-  margin-bottom: 10px;
-}
-
-.menu-fijo ul li a {
-  display: block;
-  padding: 5px 30px;
-  text-decoration: none;
-  color: #321f1b;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  font-family: 'Georgia', 'Times New Roman', serif;
-  font-size: 0.8rem; /* Ajusta el tamaño de la fuente del menú si lo deseas */
-}
-
-.menu-fijo ul li a:hover {
-  background-color: #e8d5d0;
-}
+  position
