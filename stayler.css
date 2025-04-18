@@ -9,43 +9,28 @@ body {
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.2rem;
   background-color: #fffae6; /* Amarillo claro como fondo general */
-  background-image:
-    linear-gradient(45deg, #f0e68c 25%, transparent 25%), /* Tono más oscuro de amarillo */
-    linear-gradient(-45deg, #f0e68c 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #f0e68c 75%),
-    linear-gradient(-45deg, transparent 75%, #f0e68c 75%);
-  background-size: 20px 20px;
-  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-  color: #5c3a29; /* Marrón oscuro para el texto principal */
+  color: #824438; /* Marrón oscuro para el texto principal */
 }
 
 p{
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.6rem;
-  color: #e3b408;
+  color: #caad41;
 }
 
 
 .letra-grande {
-  font-size: 3.0em; 
+  font-size: 1.5em; 
 }
 .letra-mediana{
-  font-size: 2.0em;
+  font-size: 0.9em;
 }
 /* Estilos del header */
 header {
   background-color: #0f4c5c;  
   color: #bde4df; 
-  background-color: #e68a00; /* Naranja para el header */
   color: #5c3a29; /* Marrón oscuro para el texto del header */
   padding: 1rem;
-  background-image: repeating-linear-gradient(
-    90deg,
-    rgba(0,0,0,0.1) 1px,
-    rgba(0,0,0,0.1) 2px,
-    transparent 2px,
-    transparent 20px
-  );
 }
 
 /* Navegación principal */
@@ -53,7 +38,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
-  background-color: #ffa700; /* Naranja más brillante para la navegación */
+  background-color: #b75b21; /* Naranja más brillante para la navegación */
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
@@ -66,7 +51,7 @@ header {
 .navegacion ul li ul.submenu {
   display: none; /* Esto lo mantiene oculto por defecto */
   position: absolute;
-  background-color: #ffb347; /* Tono más claro de naranja para el submenú */
+  background-color: #9f6b23; /* Tono más claro de naranja para el submenú */
   min-width: 200px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1000;
@@ -93,7 +78,7 @@ header {
 }
 
 .submenu li a:hover {
-  background-color: #ffa700; /* Naranja al hacer hover en el submenú */
+  background-color: #b75b21; /* Naranja al hacer hover en el submenú */
   padding-left: 20px;
 }
 
@@ -146,6 +131,7 @@ header {
 
 
 .contenedor {
+  color: #887408;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -153,17 +139,13 @@ header {
 
 /* Secciones del menú */
 .categoria-menu {
-  background-color: #ffe082; /* Amarillo más intenso para las categorías */
+  background-color: #dcab6b; /* Amarillo más intenso para las categorías */
   margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #5c3a29; /* Borde marrón oscuro */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   position: relative;
-  background-image:
-    linear-gradient(45deg, rgba(92, 58, 41, 0.1) 25%, transparent 25%), /* Tono marrón claro para el patrón */
-    linear-gradient(-45deg, rgba(92, 58, 41, 0.1) 25%, transparent 25%);
-  background-size: 10px 10px;
 }
 
 .categoria-menu h3 {
@@ -191,12 +173,9 @@ header {
 }
 
 .plato {
-  background-color: #fff8e1; /* Amarillo muy claro para los platos */
+  background-color: #16679a; 
   padding: 15px;
   border-radius: 8px;
-  border: 1px solid #5c3a29; /* Borde marrón oscuro */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -213,10 +192,6 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image:
-    radial-gradient(circle at 100% 150%, #fff8e1 24%, #ffe0b2 25%, #ffe0b2 28%, #fff8e1 29%, #fff8e1 36%, #ffe0b2 36%, #ffe0b2 40%, transparent 40%); /* Tonos de amarillo para el patrón */
-  background-size: 10px 10px;
-  opacity: 0.1;
 }
 
 
@@ -225,18 +200,14 @@ header {
   transform: scale(1.05);
 }
 .hero h1 {
-  color: #5c3a29; /* Marrón oscuro para el título principal del hero */
+  color: #5c3a29;
   font-size: 2.5em;
   margin-bottom: 20px;
   text-shadow: 2px 4px 6px rgba(0,0,0,0.3);
 }
 
 .hero h2 {
-<<<<<<< HEAD
   color: #ab3428;
-=======
-  color: #5c3a29; /* Marrón oscuro para el subtítulo del hero */
->>>>>>> 906d0be22d7c76b203b7305d471e421f38016414
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -250,7 +221,7 @@ header {
   font-size: 1.5em;
   margin-bottom: 30px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-  color: #5c3a29; /* Marrón oscuro para el texto secundario del hero */
+  color: #A7392A;
 }
 
 h4 {
@@ -267,11 +238,7 @@ h4 {
 h4 p{
   margin: 10px 8;
   font-size: 0.95em;
-<<<<<<< HEAD
   color: #c0c0c0;
-=======
-  color: #5c3a29; /* Marrón oscuro para el texto dentro de h4 */
->>>>>>> 906d0be22d7c76b203b7305d471e421f38016414
   transition: color 0.2s ease;
 }
 
@@ -294,11 +261,7 @@ h6 {
 h6 p {
   margin: 10px 8;
   font-size: 0.95em;
-<<<<<<< HEAD
   color: #c0c0c0;
-=======
-  color: #5c3a29; /* Marrón oscuro para el texto dentro de h6 */
->>>>>>> 906d0be22d7c76b203b7305d471e421f38016414
   transition: color 0.2s ease;
 }
 
@@ -307,10 +270,6 @@ h6 p:hover {
   transform: translateX(3px);
 }
 
-h7 {
-  font-family:'Georgia', 'Times New Roman', serif;
-  font-size: 1.5rem;
-}
 
 .precio {
   color: #ff4500; /* Rojo anaranjado para los precios */
@@ -346,16 +305,8 @@ footer a:hover {
 .hero {
   text-align: center;
   padding: 50px 0;
-<<<<<<< HEAD
- background-color: #f49e4c;
+ background-color: #926c15;
   color: #321f1b;
-=======
-  background: linear-gradient(rgba(92, 58, 41, 0.7), rgba(230, 138, 0, 0.7)), /* Marrón oscuro y naranja con transparencia */
-              url('ruta-a-tu-imagen-de-fondo.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff8e1; /* Amarillo muy claro para el texto del hero */
->>>>>>> 906d0be22d7c76b203b7305d471e421f38016414
 }
 
 /* Estilos para el contenedor del menú desplegable fijo */
@@ -400,7 +351,3 @@ footer a:hover {
   padding: 0px;
   width: 160px; /* Ancho del menú */
 }
-
-/* Estilos para el botón de cerrar dentro del menú */
-.boton-cerrar-menu {
-  position
