@@ -8,14 +8,16 @@
 body {
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.2rem;
-  background-color: #fffae6; /* Amarillo claro como fondo general */
-  color: #824438; /* Marrón oscuro para el texto principal */
+  background-color: #b52953; /* Amarillo claro como fondo general */
+  
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  color: #5c3a29; /* Marrón oscuro para el texto principal */
 }
 
 p{
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.6rem;
-  color: #caad41;
+  color: #dc000a;
 }
 
 
@@ -23,13 +25,11 @@ p{
   font-size: 1.5em; 
 }
 .letra-mediana{
-  font-size: 0.9em;
+  font-size: 1.0em;
 }
 /* Estilos del header */
 header {
-  background-color: #0f4c5c;  
-  color: #bde4df; 
-  color: #5c3a29; /* Marrón oscuro para el texto del header */
+  background-color: #ad5b46;  
   padding: 1rem;
 }
 
@@ -38,7 +38,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
-  background-color: #b75b21; /* Naranja más brillante para la navegación */
+  background-color: #cc5803; /* Naranja más brillante para la navegación */
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
@@ -51,7 +51,7 @@ header {
 .navegacion ul li ul.submenu {
   display: none; /* Esto lo mantiene oculto por defecto */
   position: absolute;
-  background-color: #9f6b23; /* Tono más claro de naranja para el submenú */
+  background-color: #ffb347; /* Tono más claro de naranja para el submenú */
   min-width: 200px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1000;
@@ -78,7 +78,7 @@ header {
 }
 
 .submenu li a:hover {
-  background-color: #b75b21; /* Naranja al hacer hover en el submenú */
+  background-color: #ffa700; /* Naranja al hacer hover en el submenú */
   padding-left: 20px;
 }
 
@@ -131,7 +131,6 @@ header {
 
 
 .contenedor {
-  color: #887408;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -139,8 +138,7 @@ header {
 
 /* Secciones del menú */
 .categoria-menu {
-  background-color: #dcab6b; /* Amarillo más intenso para las categorías */
-  margin: 20px 0;
+  background-color:#c1121e8c;
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #5c3a29; /* Borde marrón oscuro */
@@ -173,9 +171,12 @@ header {
 }
 
 .plato {
-  background-color: #16679a; 
+  background-color: #adb2d3; 
   padding: 15px;
   border-radius: 8px;
+  border: 1px solid #5c3a29; /* Borde marrón oscuro */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -192,6 +193,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
+  opacity: 0.1;
 }
 
 
@@ -200,7 +202,7 @@ header {
   transform: scale(1.05);
 }
 .hero h1 {
-  color: #5c3a29;
+  color: #5c3a29; /* Marrón oscuro para el título principal del hero */
   font-size: 2.5em;
   margin-bottom: 20px;
   text-shadow: 2px 4px 6px rgba(0,0,0,0.3);
@@ -208,12 +210,12 @@ header {
 
 .hero h2 {
   color: #ab3428;
-  font-size: 2.5em;
+  font-size: 2.5em; 
   margin-bottom: 20px;
 }
 
 .plato h3 {
-  color: #e68a00; /* Naranja para los nombres de los platos */
+  color: #d34f2a; /* Naranja para los nombres de los platos */
   margin: 10px 0;
   font-family:'Georgia', 'Times New Roman', serif;
 }
@@ -221,7 +223,7 @@ header {
   font-size: 1.5em;
   margin-bottom: 30px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-  color: #A7392A;
+  color: #5c3a29; /* Marrón oscuro para el texto secundario del hero */
 }
 
 h4 {
@@ -270,6 +272,10 @@ h6 p:hover {
   transform: translateX(3px);
 }
 
+h7 {
+  font-family:'Georgia', 'Times New Roman', serif;
+  font-size: 1.5rem;
+}
 
 .precio {
   color: #ff4500; /* Rojo anaranjado para los precios */
@@ -305,7 +311,7 @@ footer a:hover {
 .hero {
   text-align: center;
   padding: 50px 0;
- background-color: #926c15;
+ background-color: #f49e4c;
   color: #321f1b;
 }
 
