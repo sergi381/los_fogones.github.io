@@ -37,7 +37,7 @@ p{
 
 .TITULO-SEGUNDARIO{
   padding: 0px 0px;
-  background-image: url('.img/logo_los_fogones.png'); /* Agrega la imagen de fondo */
+  background-image: url(.img/logo_los_fogones.png'); /* Agrega la imagen de fondo */
   background-size: contain; /* Ajusta la imagen para que se vea completa */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center bottom; /* Posiciona la imagen en el centro inferior */
