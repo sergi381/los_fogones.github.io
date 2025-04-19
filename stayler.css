@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   background-color: #b52953; /* Amarillo claro como fondo general */
   
@@ -15,16 +15,53 @@ body {
 }
 
 p{
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
-  color: #dc000a;
+  color: #f56416;
 }
 
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.TITULO-PRINCIPAL {
+  color: #ef5446;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15x;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(250, 22, 22, 0.19);
+}
+
+.TITULO-SEGUNDARIO{
+  padding: 0px 0px;
+  background-image: url('.img/logo_los_fogones.png'); /* Agrega la imagen de fondo */
+  background-size: contain; /* Ajusta la imagen para que se vea completa */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center bottom; /* Posiciona la imagen en el centro inferior */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* Estilos para la sección hero */
+.hero {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 50px 0;
+ background-color: #f49e4c;
+  color: #321f1b;
+}
 
 .letra-grande {
+  font-family: Arial, Helvetica, sans-serif;
+  color:#db222a;
   font-size: 1.5em; 
 }
 .letra-mediana{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e72a2ac3;
   font-size: 1.0em;
 }
 /* Estilos del header */
@@ -129,13 +166,6 @@ header {
   touch-action: manipulation; /* Mejora la respuesta táctil */
 }
 
-
-.contenedor {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 /* Secciones del menú */
 .categoria-menu {
   background-color:#c1121e8c;
@@ -171,11 +201,11 @@ header {
 }
 
 .plato {
-  background-color: #adb2d3; 
+  background-color: #c41e3d; 
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #5c3a29; /* Borde marrón oscuro */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(143, 93, 125, 0.878);
   transition: transform 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -202,7 +232,7 @@ header {
   transform: scale(1.05);
 }
 .hero h1 {
-  color: #5c3a29; /* Marrón oscuro para el título principal del hero */
+  color: #5c3a29;
   font-size: 2.5em;
   margin-bottom: 20px;
   text-shadow: 2px 4px 6px rgba(0,0,0,0.3);
@@ -222,13 +252,13 @@ header {
 .hero h3 {
   font-size: 1.5em;
   margin-bottom: 30px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-  color: #5c3a29; /* Marrón oscuro para el texto secundario del hero */
+  text-shadow: 1px 2px 2px rgba(241, 141, 141, 0.822);
+  color: #fb0e312d; /* Marrón oscuro para el texto secundario del hero */
 }
 
 h4 {
   font-size: 2.3rem;
-  color: #e68a00; /* Naranja para los encabezados h4 */
+  color: #f56416; /* Naranja para los encabezados h4 */
   font-family:'Georgia', 'Times New Roman', serif;
   margin: 10px 0;
   letter-spacing: 0.8px;
@@ -240,7 +270,7 @@ h4 {
 h4 p{
   margin: 10px 8;
   font-size: 0.95em;
-  color: #c0c0c0;
+  color: #f56416;
   transition: color 0.2s ease;
 }
 
@@ -263,18 +293,13 @@ h6 {
 h6 p {
   margin: 10px 8;
   font-size: 0.95em;
-  color: #c0c0c0;
+  color: #f56416;
   transition: color 0.2s ease;
 }
 
 h6 p:hover {
   color: #ff4500; /* Rojo anaranjado para el hover en texto de h6 */
   transform: translateX(3px);
-}
-
-h7 {
-  font-family:'Georgia', 'Times New Roman', serif;
-  font-size: 1.5rem;
 }
 
 .precio {
@@ -307,18 +332,19 @@ footer a:hover {
   color: #ffe082; /* Tono más claro de amarillo para el hover en enlaces del footer */
 }
 
-/* Estilos para la sección hero */
-.hero {
-  text-align: center;
-  padding: 50px 0;
- background-color: #f49e4c;
-  color: #321f1b;
+.Contacto{
+  background-color: #ffcf49af; 
+  padding: 15px;  
+  border: 1px solid #5c3a29; /* Borde marrón oscuro */
+  box-shadow: 0 2px 4px rgba(143, 93, 125, 0.878);
+  max-width: 700px;
+  padding: 20px;
 }
 
 /* Estilos para el contenedor del menú desplegable fijo */
 .menu-desplegable-fijo {
   position: fixed;
-  left: 20px; /* Ajustado para la izquierda */
+  left: 5px; /* Ajustado para la izquierda */
   bottom: 20px;
   z-index: 1001;
 }
@@ -326,34 +352,78 @@ footer a:hover {
 /* Estilos para el botón de abrir el menú (pegado a la esquina inferior derecha) */
 .button-fijo-derecha-abajo {
   position: fixed; /* Se mantiene fijo en la ventana del navegador */
-  right: 0; /* Pega el botón al borde derecho */
-  bottom: 0; /* Pega el botón al borde inferior */
-  padding: 15px 20px; /* Ajustado el padding para que coincida aproximadamente */
-  font-size: 1.2rem; /* Ajustado el tamaño de la fuente para que coincida */
-  background-color: #ffa700; /* Naranja para el botón fijo */
-  color: #5c3a29; /* Marrón oscuro para el texto del botón fijo */
+  right: 20px; /* Un poco de espacio del borde derecho para que no esté pegado */
+  bottom: 20px; /* Un poco de espacio del borde inferior */
+  padding: 20px 30px; /* Aumentamos el padding para hacerlo más grande */
+  font-size: 1.2rem; /* Aumentamos el tamaño de la fuente */
+  background-color: #dc5d3e; /* Ejemplo de color de fondo */
+  color: #f5e9e6; /* Ejemplo de color de texto */
   border: none;
-  border-radius: 8px;
+  border-radius: 10px; /* Un poco más redondeado si lo deseas */
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3); /* Sutil sombra para destacar */
   transition: background-color 0.3s ease;
   z-index: 1002; /* Asegura que esté por encima del menú cuando está oculto */
 }
 
 .button-fijo-derecha-abajo:hover {
-  background-color: #e68a00; /* Naranja más oscuro al pasar el mouse */
+  background-color: #2e2e2e; /* Cambio de color al pasar el mouse */
 }
 
 /* Estilos para el menú desplegable (inicialmente oculto) */
 .menu-fijo {
-  background-color: #ffa700; /* Naranja para el menú fijo */
-  border: 1px solid #5c3a29; /* Borde marrón oscuro */
+  background-color: #dc5d3e;
+  border: 1px solid #321f1b;
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   position: absolute; /* Posiciona el menú relativamente al contenedor */
   bottom: calc(100% + 10px); /* Lo coloca encima del botón */
-  right: 20; /* Alinea el menú con el lado derecho del contenedor */
+  right: 0; /* Alinea el menú con el lado derecho del contenedor */
   display: none; /* Oculto por defecto */
   padding: 0px;
-  width: 160px; /* Ancho del menú */
+  width: 180px; /* Un poco más ancho para que quepa el texto más grande */
+}
+
+/* Estilos para el botón de cerrar dentro del menú */
+.boton-cerrar-menu {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 2.4rem; /* Un poco más pequeño para que no se vea desproporcionado */
+  cursor: pointer;
+  color: #321f1b;
+  opacity: 0.8; /* Ligeramente más transparente por defecto */
+  transition: opacity 0.2s ease;
+}
+
+.boton-cerrar-menu:hover {
+  opacity: 1;
+}
+
+/* Estilos para la lista del menú */
+.menu-fijo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-fijo ul li {
+  margin-bottom: 8px; /* Un poco menos de margen para compensar el botón más grande */
+}
+
+.menu-fijo li {
+  display: block;
+  padding: 4px 5px; /* Un poco más de padding vertical */
+  text-decoration: none;
+  color: #321f1b;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem; /* Aumentamos ligeramente el tamaño de la fuente del menú */
+}
+
+.menu-fijo ul li a:hover {
+  background-color: #e8d5d0;
 }
