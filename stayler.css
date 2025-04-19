@@ -8,7 +8,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
-  background-color: #b52953; /* Amarillo claro como fondo general */
+  background-color: #b52953; 
   
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
   color: #5c3a29; /* Marrón oscuro para el texto principal */
@@ -226,11 +226,6 @@ header {
   opacity: 0.1;
 }
 
-
-
-.plato img:hover {
-  transform: scale(1.05);
-}
 .hero h1 {
   color: #5c3a29;
   font-size: 2.5em;
