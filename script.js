@@ -70,3 +70,40 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error("Uno o más elementos no fueron encontrados en el DOM.");
     }
   });
+
+  function initMap() {
+    const restaurante = { lat: 13.722017505790772, lng: -88.91850142483202 };
+
+    const map = new google.maps.Map(document.getElementById("map"), {
+        center: restaurante,
+        zoom: 18,
+        styles: [
+            // Oculta TODOS los puntos de interés (negocios, parques, etc.)
+            {
+                featureType: "poi",
+                elementType: "all",
+                stylers: [{ visibility: "off" }]
+            },
+            // Oculta las etiquetas de las calles (opcional)
+            {
+                featureType: "road",
+                elementType: "labels",
+                stylers: [{ visibility: "off" }]
+            },
+            // Oculta el transporte público (autobuses, estaciones)
+            {
+                featureType: "transit",
+                elementType: "all",
+                stylers: [{ visibility: "off" }]
+            }
+        ],
+        disableDefaultUI: true // Limpia la interfaz
+    });
+
+    // Marcador único para tu restaurante
+    new google.maps.Marker({
+        position: restaurante,
+        map: map,
+        title: "Restaurante Los Fogones"
+    });
+}
