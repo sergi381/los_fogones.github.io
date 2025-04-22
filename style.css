@@ -436,7 +436,7 @@ footer a:hover {
 /* BOTONES FUNCIONALES */
 .redes-sociales {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centrado horizontal por defecto para pantallas grandes */
   gap: 20px;
   margin-top: 20px;
 }
@@ -453,6 +453,7 @@ footer a:hover {
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   cursor: pointer;
+  width: auto; /* Permite que el ancho se ajuste al contenido por defecto */
 }
 
 /* Estilo específico para los iconos */
@@ -465,10 +466,18 @@ footer a:hover {
 
 /* Versión móvil */
 @media (max-width: 600px) {
+  .redes-sociales {
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: stretch; /* Estira los elementos horizontalmente */
+    gap: 10px; /* Reduce el espacio entre botones en móvil */
+  }
+
   .boton-red {
+    display: flex; /* Asegura que el icono y el texto estén alineados en fila */
+    width: 100%; /* Ocupa todo el ancho del contenedor en móvil */
     padding: 12px 20px;
   }
-  
+
   .boton-red i {
     margin-right: 10px;
     font-size: 1.1rem;
@@ -491,6 +500,16 @@ footer a:hover {
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 
+/* Estilos para PC (pantallas más grandes de 600px) */
+@media (min-width: 601px) {
+  .redes-sociales {
+    /* Mantiene el comportamiento en fila y centrado */
+  }
+
+  .boton-red {
+    width: auto; /* Vuelve al ancho automático para que no se estiren por defecto */
+  }
+}
 /* SECCIÓN UBICACIÓN */
 .Ubicacion {
   background-color: #c41e3d;
