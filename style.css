@@ -500,16 +500,26 @@ footer a:hover {
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 
-/* Estilos para PC (pantallas más grandes de 600px) */
-@media (min-width: 601px) {
+/* Versión móvil */
+@media (max-width: 600px) {
   .redes-sociales {
-    /* Mantiene el comportamiento en fila y centrado */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: stretch; /* Estira los elementos horizontalmente */
+    gap: 10px; /* Reduce el espacio entre botones en móvil */
   }
 
   .boton-red {
-    width: auto; /* Vuelve al ancho automático para que no se estiren por defecto */
+    display: flex; /* Asegura que el icono y el texto estén alineados en fila */
+    width: 100%; /* Ocupa todo el ancho del contenedor en móvil */
+    padding: 12px 20px;
+  }
+
+  .boton-red i {
+    margin-right: 10px;
+    font-size: 1.1rem;
   }
 }
+
 /* SECCIÓN UBICACIÓN */
 .Ubicacion {
   background-color: #c41e3d;
