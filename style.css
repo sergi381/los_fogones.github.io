@@ -26,16 +26,17 @@ p{
   padding: 20px;
 }
 .TITULO-PRINCIPAL {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.0rem;
-  color: #d32bfd6e;
   background-image: url('img/logo_los_fogones.png');
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 180px auto;
   padding-right: 190px; /* Ancho imagen + 10px */
 }
-
+.TITULO-PRINCIPAL-p{ 
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.0rem;
+  color: #d32bfd6e;
+}
 @media (max-width: 768px) {
   .TITULO-PRINCIPAL {
     background-size: 80px auto;
