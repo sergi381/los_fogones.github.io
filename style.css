@@ -11,13 +11,13 @@ body {
   background-color: #b52953; 
   
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-  color: #5c3a29; /* Marrón oscuro para el texto principal */
+  color: #5c3a29; 
 }
 
 p{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
-  color: #f56416;
+  color: #820263;
 }
 
 .contenedor {
@@ -26,6 +26,9 @@ p{
   padding: 20px;
 }
 .TITULO-PRINCIPAL {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.0rem;
+  color: #d32bfd6e;
   background-image: url('img/logo_los_fogones.png');
   background-repeat: no-repeat;
   background-position: right center;
@@ -44,8 +47,8 @@ p{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding: 50px 0;
- background-color: #f49e4c;
-  color:  #ff5533;
+ background-color: #fa95cd;
+  color:  #800f2f;
 }
 
 .letra-grande {
@@ -64,7 +67,7 @@ p{
 
 /* Estilos del header */
 header {
-  background-color: #ad5b46;  
+  background-color: #d8003290;  
   padding: 1rem;
 }
 
@@ -73,7 +76,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
-  background-color: #cc5803; /* Naranja más brillante para la navegación */
+  background-color: #ffa6c1; /* Naranja más brillante para la navegación */
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
@@ -86,7 +89,7 @@ header {
 .navegacion ul li ul.submenu {
   display: none; /* Esto lo mantiene oculto por defecto */
   position: absolute;
-  background-color: #ffb347; /* Tono más claro de naranja para el submenú */
+  background-color: #ffa6c1; /* Tono más claro de naranja para el submenú */
   min-width: 200px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1000;
@@ -113,7 +116,7 @@ header {
 }
 
 .submenu li a:hover {
-  background-color: #ffa700; /* Naranja al hacer hover en el submenú */
+  background-color: #b43e8f;
   padding-left: 20px;
 }
 
@@ -130,7 +133,7 @@ header {
 .submenu {
   display: none; /* Esto es crucial para que empiece oculto */
   position: absolute;
-  background-color: #ffb347;
+  background-color: #b43e8f;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1000;
   top: 100%;
@@ -150,7 +153,7 @@ header {
 }
 
 .submenu li a:hover {
-  background-color: #ffa700;
+  background-color: #b43e8f;
   padding-left: 20px;
 }
 
@@ -166,7 +169,7 @@ header {
 
 /* Secciones del menú */
 .categoria-menu {
-  background-color:#c1121e8c;
+  background-color:#ef709d;
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #5c3a29; /* Borde marrón oscuro */
@@ -175,7 +178,7 @@ header {
 }
 
 .categoria-menu h3 {
-  color: #e68a00; /* Naranja para los títulos de las categorías */
+  color: #ef709d;
   margin-bottom: 15px;
   font-family: 'Palatino', serif;
   text-shadow: 1px 1px 2px #0000001a;
@@ -199,7 +202,7 @@ header {
 }
 
 .plato {
-  background-color: #c41e3d; 
+  background-color: #ffa6c1; 
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #5c3a29; /* Borde marrón oscuro */
@@ -225,10 +228,10 @@ header {
 }
 
 .hero h1 {
-  color: #5c3a29;
+  color: #d32bfd;
   font-size: 2.5em;
   margin-bottom: 20px;
-  text-shadow: 2px 4px 6px rgba(0,0,0,0.3);
+  text-shadow: 2px 6px 6px rgb(0, 0, 0);
 }
 
 .hero h2 {
@@ -239,7 +242,7 @@ header {
 }
 
 .plato h3 {
-  color: #d34f2a; /* Naranja para los nombres de los platos */
+  color: #820263;
   margin: 10px 0;
   font-family:'Georgia', 'Times New Roman', serif;
 }
@@ -247,12 +250,12 @@ header {
   font-size: 1.5em;
   margin-bottom: 30px;
   text-shadow: 1px 2px 2px rgba(241, 141, 141, 0.822);
-  color: #fb0e312d; /* Marrón oscuro para el texto secundario del hero */
+  color: #820263; /* Marrón oscuro para el texto secundario del hero */
 }
 
 h4 {
   font-size: 2.3rem;
-  color: #f56416; /* Naranja para los encabezados h4 */
+  color: #820263; /* Naranja para los encabezados h4 */
   font-family:'Georgia', 'Times New Roman', serif;
   margin: 10px 0;
   letter-spacing: 0.8px;
@@ -264,18 +267,18 @@ h4 {
 h4 p{
   margin: 10px 8;
   font-size: 0.95em;
-  color: #f56416;
+  color: #820263;
   transition: color 0.2s ease;
 }
 
 h4 p:hover {
-  color: #ff4500; /* Rojo anaranjado para el hover en texto de h4 */
+  color: #820263; /* Rojo anaranjado para el hover en texto de h4 */
   transform: translateX(3px);
 }
 
 h6 {
   font-size: 1.5rem;
-  color: #e68a00; /* Naranja para los encabezados h6 */
+  color: #f48498;
   font-family:'Georgia', 'Times New Roman', serif;
   margin: 10px 0;
   letter-spacing: 0.8px;
@@ -352,10 +355,10 @@ footer a:hover {
 
 /* Estilos comunes para ambas secciones */
 .Contacto, .Ubicacion {
-  background-color: #c41e3d;
+  background-color: #ffa6c1;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 3px 4px 8px rgb(0, 0, 0);
   margin-bottom: 20px;
 }
 
@@ -427,10 +430,10 @@ footer a:hover {
 
 /* SECCIÓN CONTACTO */
 .Contacto {
-  background-color: #c41e3d;
+  background-color: #ffa6c1;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 3px 4px 8px rgb(0, 0, 0);
 }
 
 /* BOTONES FUNCIONALES */
@@ -522,10 +525,10 @@ footer a:hover {
 
 /* SECCIÓN UBICACIÓN */
 .Ubicacion {
-  background-color: #c41e3d;
+  background-color: #ffa6c1;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 3px 4px 8px rgb(0, 0, 0);
 }
 
 .contenedor-mapa {
@@ -581,7 +584,7 @@ footer a:hover {
   bottom: 20px; /* Un poco de espacio del borde inferior */
   padding: 20px 30px; /* Aumentamos el padding para hacerlo más grande */
   font-size: 1.2rem; /* Aumentamos el tamaño de la fuente */
-  background-color: #dc5d3e; /* Ejemplo de color de fondo */
+  background-color: #dd0426; /* Ejemplo de color de fondo */
   color: #f5e9e6; /* Ejemplo de color de texto */
   border: none;
   border-radius: 10px; /* Un poco más redondeado si lo deseas */
@@ -597,10 +600,10 @@ footer a:hover {
 
 /* Estilos para el menú desplegable (inicialmente oculto) */
 .menu-fijo {
-  background-color: #dc5d3e;
+  background-color: #dd0426;
   border: 1px solid #321f1b;
   border-radius: 8px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
   position: absolute; /* Posiciona el menú relativamente al contenedor */
   bottom: calc(100% + 10px); /* Lo coloca encima del botón */
   right: 0; /* Alinea el menú con el lado derecho del contenedor */
@@ -638,17 +641,114 @@ footer a:hover {
   margin-bottom: 8px; /* Un poco menos de margen para compensar el botón más grande */
 }
 
-.menu-fijo li {
-  display: block;
+.menu-fijo li{display: block;
   padding: 4px 5px; /* Un poco más de padding vertical */
   text-decoration: none;
-  color: #321f1b;
+  color: #000000;
   border-radius: 5px;
   transition: background-color 0.3s ease;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3rem; /* Aumentamos ligeramente el tamaño de la fuente del menú */
+  font-size: 1.3rem;
 }
 
 .menu-fijo ul li a:hover {
-  background-color: #e8d5d0;
+  background-color: #e055b0;
+}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Reset y estilos base */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Fondo oscuro semi-transparente */
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+opacity: 0;
+transition: opacity 0.5s ease;
+}
+
+.overlay.visible {
+opacity: 1;
+}
+
+/* Contenedor de la carta */
+.card-container {
+perspective: 1000px;
+width: 300px;
+height: 200px;
+}
+
+/* Estilo de la carta */
+.card {
+width: 100%;
+height: 100%;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 1.2s ease-in-out;
+transform: rotateY(0deg);
+}
+
+/* Cara frontal (parte de atrás de la carta) */
+.card-front {
+position: absolute;
+width: 100%;
+height: 100%;
+background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+border-radius: 15px;
+backface-visibility: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 60px;
+color: rgba(255, 255, 255, 0.9);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Cara trasera (contenido de la carta) */
+.card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+background: linear-gradient(135deg, #ffffff 0%, #f3f3f3 100%);
+border-radius: 15px;
+transform: rotateY(180deg);
+backface-visibility: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 25px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-back h2 {
+color: #ff6b6b;
+margin-bottom: 15px;
+font-size: 24px;
+}
+
+.card-back p {
+color: #666;
+text-align: center;
+font-size: 16px;
+}
+
+/* Estado abierto */
+.card.open {
+transform: rotateY(180deg);
 }

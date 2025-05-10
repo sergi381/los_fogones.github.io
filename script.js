@@ -107,3 +107,33 @@ document.addEventListener('DOMContentLoaded', function() {
         title: "Restaurante Los Fogones"
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const overlay = document.querySelector('.overlay');
+  const card = document.querySelector('.card');
+  
+  // Mostrar overlay con transición
+  setTimeout(function() {
+      overlay.classList.add('visible');
+      
+      // Abrir la carta después de 0.5 segundos
+      setTimeout(function() {
+          card.classList.add('open');
+          
+          // Cerrar después de 10 segundos
+          setTimeout(function() {
+              card.classList.remove('open');
+              
+              // Ocultar overlay después de que termine la animación
+              setTimeout(function() {
+                  overlay.classList.remove('visible');
+                  
+                  // Eliminar completamente después de la transición
+                  setTimeout(function() {
+                      overlay.style.display = 'none';
+                  }, 500);
+              }, 1000);
+          }, 10000);
+      }, 500);
+  }, 100);
+});
