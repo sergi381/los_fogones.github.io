@@ -33,7 +33,7 @@ p{
   padding-right: 190px; /* Ancho imagen + 10px */
 }
 
-}
+
 @media (max-width: 768px) {
   .TITULO-PRINCIPAL {
     background-size: 80px auto;
