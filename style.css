@@ -26,7 +26,8 @@ p{
   padding: 20px;
 }
 .TITULO-PRINCIPAL {
-  background-image: url('img/logo_los_fogones.png');
+
+  background-image: url(img/logo_los_fogones.png);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 180px auto;
@@ -44,8 +45,8 @@ p{
 .hero {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  padding: 50px 0;
- background-color: #fa95cd;
+  padding: 100px 0;
+  background: linear-gradient(541deg, #50b7b7b8 0%, #001233 100%);
   color:  #800f2f;
 }
 
@@ -65,7 +66,7 @@ p{
 
 /* Estilos del header */
 header {
-  background-color: #d8003290;  
+  background-color: #c1bcac;  
   padding: 1rem;
 }
 
@@ -74,7 +75,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
-  background-color: #ffa6c1; /* Naranja más brillante para la navegación */
+  background-color: #b2a496; 
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
@@ -87,7 +88,7 @@ header {
 .navegacion ul li ul.submenu {
   display: none; /* Esto lo mantiene oculto por defecto */
   position: absolute;
-  background-color: #ffa6c1; /* Tono más claro de naranja para el submenú */
+  background-color: #d19c1d; 
   min-width: 200px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1000;
@@ -131,7 +132,7 @@ header {
 .submenu {
   display: none; /* Esto es crucial para que empiece oculto */
   position: absolute;
-  background-color: #b43e8f;
+  background-color: #b08e45;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1000;
   top: 100%;
@@ -167,7 +168,7 @@ header {
 
 /* Secciones del menú */
 .categoria-menu {
-  background-color:#ef709d;
+  background-color:#5caa9544;
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #5c3a29; /* Borde marrón oscuro */
@@ -176,7 +177,7 @@ header {
 }
 
 .categoria-menu h3 {
-  color: #ef709d;
+  color: #b08e45;
   margin-bottom: 15px;
   font-family: 'Palatino', serif;
   text-shadow: 1px 1px 2px #0000001a;
@@ -200,7 +201,7 @@ header {
 }
 
 .plato {
-  background-color: #ffa6c1; 
+  background-color: #c0c0c0; 
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #5c3a29; /* Borde marrón oscuro */
@@ -428,7 +429,7 @@ footer a:hover {
 
 /* SECCIÓN CONTACTO */
 .Contacto {
-  background-color: #ffa6c1;
+  background-color: #5caa9544;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 3px 4px 8px rgb(0, 0, 0);
@@ -523,7 +524,7 @@ footer a:hover {
 
 /* SECCIÓN UBICACIÓN */
 .Ubicacion {
-  background-color: #ffa6c1;
+  background-color: #5caa9544;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 3px 4px 8px rgb(0, 0, 0);
@@ -650,7 +651,7 @@ footer a:hover {
 }
 
 .menu-fijo ul li a:hover {
-  background-color: #e055b0;
+  background-color: #064381;
 }
 /* Reset básico */
 * {
@@ -706,7 +707,7 @@ transform: rotateY(0deg);
 position: absolute;
 width: 100%;
 height: 100%;
-background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+background: linear-gradient(135deg, #064381 50%, #43aa8b 150%);
 border-radius: 15px;
 backface-visibility: hidden;
 display: flex;
